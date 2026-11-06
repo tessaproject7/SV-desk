@@ -1,9 +1,17 @@
 /* Offline shell only. Do not cache /d/ or /live/ data paths. */
-const SHELL = ["/", "./", "./index.html", "./app.css", "./app.js", "./chart.js", "./manifest.json"];
-const CACHE = "desk-shell-v2";
+const SHELL = ["./index.html", "./", "./app.css", "./app.js", "./chart.js", "./manifest.json"];
+const CACHE = "desk-shell-v3";
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  e.waitUntil(
+    caches.open(CACHE).then(async (c) => {
+      for (const u of SHELL) {
+        try {
+          await c.add(u);
+        } catch (_) {}
+      }
+    }).then(() => self.skipWaiting())
+  );
 });
 self.addEventListener("activate", (e) => {
   e.waitUntil(
@@ -11,6 +19,9 @@ self.addEventListener("activate", (e) => {
       Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
     ).then(() => self.clients.claim())
   );
+});
+self.addEventListener("message", (e) => {
+  if (e.data === "skipWaiting") self.skipWaiting();
 });
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);

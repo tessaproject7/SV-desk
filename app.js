@@ -736,6 +736,10 @@
     } else if (state.dataPath) {
       state.mode = "planb";
       await refreshAll();
+      if (state.offline) {
+        state.proofRoot = "live/";
+        await refreshAll();
+      }
     } else {
       // Home Screen / bare URL: show the public paper snapshot (no secrets).
       state.mode = "planb";
@@ -772,7 +776,23 @@
     }, 1000);
 
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("./sw.js").catch(() => {});
+      navigator.serviceWorker.register("./sw.js").then((reg) => {
+        if (reg.waiting) reg.waiting.postMessage("skipWaiting");
+        reg.addEventListener("updatefound", () => {
+          const nw = reg.installing;
+          if (!nw) return;
+          nw.addEventListener("statechange", () => {
+            if (nw.state === "installed" && navigator.serviceWorker.controller) {
+              nw.postMessage("skipWaiting");
+            }
+          });
+        });
+      }).catch(() => {});
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (window.__deskSwReloading) return;
+        window.__deskSwReloading = true;
+        location.reload();
+      });
     }
   }
 
