@@ -1,0 +1,120 @@
+{
+  "range": "1H",
+  "points": [
+    {
+      "ts": 1793919191.8007178,
+      "value": 200.0
+    },
+    {
+      "ts": 1793919371.8007178,
+      "value": 202.4
+    },
+    {
+      "ts": 1793919551.8007178,
+      "value": 204.8
+    },
+    {
+      "ts": 1793919731.8007178,
+      "value": 207.2
+    },
+    {
+      "ts": 1793919911.8007178,
+      "value": 209.6
+    },
+    {
+      "ts": 1793920091.8007178,
+      "value": 212.0
+    },
+    {
+      "ts": 1793920271.8007178,
+      "value": 214.4
+    },
+    {
+      "ts": 1793920451.8007178,
+      "value": 216.8
+    },
+    {
+      "ts": 1793920631.8007178,
+      "value": 219.2
+    },
+    {
+      "ts": 1793920811.8007178,
+      "value": 221.6
+    },
+    {
+      "ts": 1793920991.8007178,
+      "value": 224.0
+    },
+    {
+      "ts": 1793921171.8007178,
+      "value": 226.4
+    },
+    {
+      "ts": 1793921351.8007178,
+      "value": 228.8
+    },
+    {
+      "ts": 1793921531.8007178,
+      "value": 231.2
+    },
+    {
+      "ts": 1793921711.8007178,
+      "value": 233.6
+    },
+    {
+      "ts": 1793921891.8007178,
+      "value": 236.0
+    },
+    {
+      "ts": 1793922071.8007178,
+      "value": 238.4
+    },
+    {
+      "ts": 1793922251.8007178,
+      "value": 240.8
+    },
+    {
+      "ts": 1793922431.8007178,
+      "value": 243.2
+    },
+    {
+      "ts": 1793922611.8007178,
+      "value": 245.6
+    }
+  ],
+  "startValue": 200.0,
+  "empty": false,
+  "emptyText": "Waiting for the first trade",
+  "marks": [
+    {
+      "ts": 1793920811.8007178,
+      "kind": "bought",
+      "mint": "DemoPepe11111111111111111111111111111111",
+      "coin_url": "https://fomo.family/coin?address=DemoPepe11111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link",
+      "title": "Bought DemoPepe",
+      "value": "$47.50 \u00b7 23.8% of stack",
+      "label": "Bought DemoPepe",
+      "color": "#0a84ff"
+    },
+    {
+      "ts": 1793922011.8007178,
+      "kind": "sold",
+      "mint": "Other11111111111111111111111111111111111",
+      "coin_url": "https://fomo.family/coin?address=Other11111111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link",
+      "title": "Sold Other",
+      "value": "+$12.40",
+      "label": "+$12.40",
+      "color": "#00d35a"
+    },
+    {
+      "ts": 1793921711.8007178,
+      "kind": "stopped",
+      "mint": "StopX1111111111111111111111111111111111",
+      "coin_url": "https://fomo.family/coin?address=StopX1111111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link",
+      "title": "Stopped StopX",
+      "value": "-$4.20",
+      "label": "-6% \u00b7 -$4.20",
+      "color": "#ff453a"
+    }
+  ]
+}

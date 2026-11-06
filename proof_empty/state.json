@@ -1,0 +1,72 @@
+{
+  "balance": 200,
+  "nightStartBalance": 200,
+  "todayPct": 0,
+  "multiplier": 1,
+  "mode": "PAPER",
+  "ts": 1793922611.8007178,
+  "agents": {
+    "scanner": {
+      "name": "Scanner",
+      "agent": "scanner",
+      "color": "#64d2ff",
+      "status": "running",
+      "pools": 0,
+      "headline": "0 pools",
+      "feed": [],
+      "empty": "Listening for graduations"
+    },
+    "auditor": {
+      "name": "Auditor",
+      "agent": "auditor",
+      "status": "running",
+      "takenApart": 0,
+      "rejected": 0,
+      "headline": "0 taken apart",
+      "layers": [],
+      "summary": null,
+      "empty": "No coin taken apart yet"
+    },
+    "analyst": {
+      "name": "Analyst",
+      "agent": "analyst",
+      "color": "#ffd60a",
+      "status": "running",
+      "headline": "Scoring",
+      "score": null,
+      "passed": null,
+      "count": 0,
+      "mint": null,
+      "coin_url": null,
+      "greenFrom": 70
+    },
+    "executor": {
+      "name": "Executor",
+      "agent": "executor",
+      "color": "#00d35a",
+      "status": "running",
+      "trades": 0,
+      "headline": "0 trades",
+      "sizeUsd": null,
+      "stackPct": null,
+      "fillStatus": null,
+      "mint": null,
+      "coin_url": null,
+      "detail": null
+    },
+    "risk": {
+      "name": "Risk",
+      "agent": "risk",
+      "color": "#ff6b9a",
+      "status": "running",
+      "headline": "Guarding",
+      "open": 0,
+      "lastExit": null,
+      "pills": {
+        "stop": "stop -6%",
+        "trail": "trail 12%"
+      },
+      "pauseLocked": false
+    }
+  }
+}

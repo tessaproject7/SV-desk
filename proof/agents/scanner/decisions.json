@@ -1,0 +1,21 @@
+{
+  "agent": "scanner",
+  "status": "running",
+  "pauseLocked": false,
+  "decisions": [
+    {
+      "ts": 1793922491.8007178,
+      "mint": "DemoPepe11111111111111111111111111111111",
+      "verdict": "pass",
+      "reason": null,
+      "coin_url": "https://fomo.family/coin?address=DemoPepe11111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    },
+    {
+      "ts": 1793922311.8007178,
+      "mint": "DeadCoin1111111111111111111111111111111",
+      "verdict": "kill",
+      "reason": "liq $31.2K",
+      "coin_url": "https://fomo.family/coin?address=DeadCoin1111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    }
+  ]
+}

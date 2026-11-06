@@ -1,0 +1,67 @@
+{
+  "mint": "DemoPepe11111111111111111111111111111111",
+  "name": "DemoPepe",
+  "layers": [
+    {
+      "n": 1,
+      "name": "Mint authority",
+      "pass": true,
+      "value": "Revoked",
+      "source": "rpc"
+    },
+    {
+      "n": 2,
+      "name": "Freeze authority",
+      "pass": true,
+      "value": "Revoked",
+      "source": "rpc"
+    },
+    {
+      "n": 3,
+      "name": "Dev wallet",
+      "pass": true,
+      "value": "0.9% \u00b7 sold 0",
+      "source": "rpc"
+    },
+    {
+      "n": 4,
+      "name": "Top 10 holders",
+      "pass": true,
+      "value": "16.8%",
+      "source": "rpc"
+    },
+    {
+      "n": 5,
+      "name": "Liquidity",
+      "pass": true,
+      "value": "100% locked",
+      "source": "rugcheck"
+    },
+    {
+      "n": 6,
+      "name": "Pool age",
+      "pass": true,
+      "value": "43m",
+      "source": "db"
+    },
+    {
+      "n": 7,
+      "name": "Bundled wallets",
+      "pass": true,
+      "value": "None",
+      "source": "rugcheck"
+    },
+    {
+      "n": 8,
+      "name": "Delegations",
+      "pass": true,
+      "value": "None",
+      "source": "rpc"
+    }
+  ],
+  "rejected": false,
+  "cleared": true,
+  "coin_url": "https://fomo.family/coin?address=DemoPepe11111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link",
+  "empty": false,
+  "emptyText": "No coin taken apart yet"
+}

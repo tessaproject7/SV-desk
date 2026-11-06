@@ -1,0 +1,7 @@
+/d/
+d/
+secrets.env
+.env
+*.db
+*.db-wal
+*.db-shm

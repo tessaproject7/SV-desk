@@ -1,0 +1,14 @@
+{
+  "agent": "auditor",
+  "status": "running",
+  "pauseLocked": false,
+  "decisions": [
+    {
+      "ts": 1793921611.8007178,
+      "mint": "Bad111111111111111111111111111111111111",
+      "verdict": "rejected",
+      "reason": "Auditor \u00b7 freeze not revoked",
+      "coin_url": "https://fomo.family/coin?address=Bad111111111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    }
+  ]
+}
