@@ -1,0 +1,63 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "ts": 1793922511.8007178,
+      "kind": "bought",
+      "mint": "DemoPepe11111111111111111111111111111111",
+      "agent": "executor",
+      "title": "Bought DemoPepe",
+      "subtitle": "Executor \u00b7 now",
+      "value": "$47.50 \u00b7 23.8% of stack",
+      "coin_url": "https://fomo.family/coin?address=DemoPepe11111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    },
+    {
+      "id": 2,
+      "ts": 1793922211.8007178,
+      "kind": "sold",
+      "mint": "Other11111111111111111111111111111111111",
+      "agent": "risk",
+      "title": "Sold Other",
+      "subtitle": "Risk \u00b7 trailing stop",
+      "value": "+$12.40",
+      "coin_url": "https://fomo.family/coin?address=Other11111111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    },
+    {
+      "id": 3,
+      "ts": 1793921911.8007178,
+      "kind": "stopped",
+      "mint": "StopX1111111111111111111111111111111111",
+      "agent": "risk",
+      "title": "Stopped StopX",
+      "subtitle": "Risk \u00b7 -6% stop",
+      "value": "-$4.20",
+      "coin_url": "https://fomo.family/coin?address=StopX1111111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    },
+    {
+      "id": 4,
+      "ts": 1793921611.8007178,
+      "kind": "rejected",
+      "mint": "Bad111111111111111111111111111111111111",
+      "agent": "auditor",
+      "title": "Rejected Bad",
+      "subtitle": "Auditor \u00b7 freeze not revoked",
+      "value": "Skipped",
+      "coin_url": "https://fomo.family/coin?address=Bad111111111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    },
+    {
+      "id": 5,
+      "ts": 1793921311.8007178,
+      "kind": "rejected",
+      "mint": "Chase1111111111111111111111111111111111",
+      "agent": "analyst",
+      "title": "Rejected Chase",
+      "subtitle": "Analyst (rules) \u00b7 chase 0.31",
+      "value": "Skipped",
+      "coin_url": "https://fomo.family/coin?address=Chase1111111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    }
+  ],
+  "pageSize": 30,
+  "nextBefore": 1793921311.8007178,
+  "empty": false,
+  "emptyText": "Nothing yet tonight"
+}

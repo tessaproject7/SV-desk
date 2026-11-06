@@ -1,0 +1,15 @@
+{
+  "agent": "risk",
+  "status": "running",
+  "pauseLocked": true,
+  "decisions": [
+    {
+      "ts": 1793922211.8007178,
+      "mint": "Other11111111111111111111111111111111111",
+      "verdict": "trail",
+      "reason": "trail",
+      "pnlUsd": 12.4,
+      "coin_url": "https://fomo.family/coin?address=Other11111111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    }
+  ]
+}

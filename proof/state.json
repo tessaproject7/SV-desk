@@ -1,0 +1,132 @@
+{
+  "balance": 248.5,
+  "nightStartBalance": 200.0,
+  "todayPct": 24.25,
+  "multiplier": 1.2425,
+  "mode": "PAPER",
+  "ts": 1793922611.8007178,
+  "agents": {
+    "scanner": {
+      "name": "Scanner",
+      "agent": "scanner",
+      "color": "#64d2ff",
+      "status": "running",
+      "pools": 12,
+      "headline": "12 pools",
+      "feed": [
+        {
+          "mint": "DemoPepe11111111111111111111111111111111",
+          "name": "DemoPepe",
+          "verdict": "pass",
+          "reason": null,
+          "liquidityUsd": 52000,
+          "ts": 1793922491.8007178,
+          "coin_url": "https://fomo.family/coin?address=DemoPepe11111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+        },
+        {
+          "mint": "DeadCoin1111111111111111111111111111111",
+          "name": "Dead",
+          "verdict": "kill",
+          "reason": "liq $31.2K",
+          "liquidityUsd": 31200,
+          "ts": 1793922311.8007178,
+          "coin_url": "https://fomo.family/coin?address=DeadCoin1111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+        }
+      ],
+      "empty": null
+    },
+    "auditor": {
+      "name": "Auditor",
+      "agent": "auditor",
+      "status": "running",
+      "takenApart": 3,
+      "rejected": 1,
+      "headline": "3 taken apart",
+      "layers": [
+        {
+          "n": 1,
+          "pass": true,
+          "value": "Revoked"
+        },
+        {
+          "n": 2,
+          "pass": true,
+          "value": "Revoked"
+        },
+        {
+          "n": 3,
+          "pass": true,
+          "value": "0.9% \u00b7 sold 0"
+        },
+        {
+          "n": 4,
+          "pass": true,
+          "value": "16.8%"
+        },
+        {
+          "n": 5,
+          "pass": true,
+          "value": "100% locked"
+        },
+        {
+          "n": 6,
+          "pass": true,
+          "value": "43m"
+        },
+        {
+          "n": 7,
+          "pass": true,
+          "value": "None"
+        },
+        {
+          "n": 8,
+          "pass": true,
+          "value": "None"
+        }
+      ],
+      "summary": "8/8 \u2192 Executor",
+      "empty": null
+    },
+    "analyst": {
+      "name": "Analyst",
+      "agent": "analyst",
+      "color": "#ffd60a",
+      "status": "running",
+      "headline": "Scoring",
+      "score": 78,
+      "passed": true,
+      "count": 2,
+      "mint": "DemoPepe11111111111111111111111111111111",
+      "coin_url": "https://fomo.family/coin?address=DemoPepe11111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link",
+      "greenFrom": 70
+    },
+    "executor": {
+      "name": "Executor",
+      "agent": "executor",
+      "color": "#00d35a",
+      "status": "running",
+      "trades": 1,
+      "headline": "1 trades",
+      "sizeUsd": 47.5,
+      "stackPct": 23.75,
+      "fillStatus": "bought",
+      "mint": "DemoPepe11111111111111111111111111111111",
+      "coin_url": "https://fomo.family/coin?address=DemoPepe11111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link",
+      "detail": "$47.50 \u00b7 23.8% of stack"
+    },
+    "risk": {
+      "name": "Risk",
+      "agent": "risk",
+      "color": "#ff6b9a",
+      "status": "running",
+      "headline": "Guarding",
+      "open": 1,
+      "lastExit": null,
+      "pills": {
+        "stop": "stop -6%",
+        "trail": "trail 12%"
+      },
+      "pauseLocked": true
+    }
+  }
+}

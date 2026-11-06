@@ -1,0 +1,15 @@
+{
+  "agent": "analyst",
+  "status": "running",
+  "pauseLocked": false,
+  "decisions": [
+    {
+      "ts": 1793922411.8007178,
+      "mint": "DemoPepe11111111111111111111111111111111",
+      "verdict": "pass",
+      "reason": null,
+      "score": 78,
+      "coin_url": "https://fomo.family/coin?address=DemoPepe11111111111111111111111111111111&chainId=1399811149&r=savipww&source=share_link"
+    }
+  ]
+}

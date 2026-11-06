@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="app.css" />
+  <title>Grok Bot Desk</title>
+</head>
+<body>
+  <div id="app">
+    <div id="error-bar" class="error-bar hidden" role="status"></div>
+
+    <!-- HOME -->
+    <section id="screen-home" class="screen active" data-screen="home">
+      <header class="navbar">
+        <button class="avatar tap" id="btn-avatar" aria-label="Account">G</button>
+        <div class="nav-title">Grok Bot <span class="chev">›</span></div>
+        <button class="icon-btn tap" id="btn-search" aria-label="Search">⌕</button>
+        <button class="icon-btn tap bell" id="btn-bell" aria-label="Notifications"><span class="bell-glyph">🔔</span><span class="dot hidden" id="bell-dot"></span></button>
+      </header>
+      <div class="home-scroll">
+        <div class="balance-row">
+          <div class="odometer" id="balance-odo" aria-live="polite">—</div>
+          <span class="paper-badge hidden" id="paper-badge">PAPER</span>
+        </div>
+        <div class="balance-meta">
+          <span class="today-pct num" id="today-pct">—</span>
+          <span class="mult-pill num" id="mult-pill">—</span>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="home-chart"></canvas>
+          <div class="chart-empty hidden" id="home-chart-empty">Waiting for the first trade</div>
+        </div>
+        <div class="range-switch" id="range-switch">
+          <button class="range tap active" data-range="LIVE">LIVE</button>
+          <button class="range tap" data-range="1H">1H</button>
+          <button class="range tap" data-range="4H">4H</button>
+          <button class="range tap" data-range="1D">1D</button>
+          <button class="range tap" data-range="1W">1W</button>
+          <button class="range tap" data-range="ALL">ALL</button>
+        </div>
+        <div class="section-head">
+          <span>Agents · <span id="agents-running">5 running</span></span>
+        </div>
+        <div class="agent-carousel" id="agent-carousel"></div>
+        <div class="section-head">
+          <span>Activity</span>
+          <button class="link tap" id="activity-see-all">See all</button>
+        </div>
+        <div class="activity-preview" id="activity-preview"></div>
+      </div>
+    </section>
+
+    <!-- AGENTS -->
+    <section id="screen-agents" class="screen" data-screen="agents">
+      <header class="navbar"><div class="nav-title">Agents</div></header>
+      <div class="page-scroll" id="agents-list"></div>
+    </section>
+
+    <!-- ACTIVITY -->
+    <section id="screen-activity" class="screen" data-screen="activity">
+      <header class="navbar"><div class="nav-title">Activity</div></header>
+      <div class="page-scroll" id="activity-list"></div>
+      <div class="empty-state hidden" id="activity-empty">Nothing yet tonight</div>
+    </section>
+
+    <!-- ACCOUNT -->
+    <section id="screen-account" class="screen" data-screen="account">
+      <header class="navbar"><div class="nav-title">Account</div></header>
+      <div class="page-scroll" id="account-body"></div>
+    </section>
+
+    <!-- COIN (overlay) -->
+    <section id="screen-coin" class="screen overlay" data-screen="coin">
+      <header class="navbar">
+        <button class="icon-btn tap" id="coin-back" aria-label="Back">‹</button>
+        <div class="nav-title" id="coin-title">Coin</div>
+        <span class="paper-badge hidden" id="coin-paper">PAPER</span>
+      </header>
+      <div class="page-scroll" id="coin-body"></div>
+    </section>
+
+    <!-- AUDITOR (overlay) -->
+    <section id="screen-auditor" class="screen overlay" data-screen="auditor">
+      <header class="navbar">
+        <button class="icon-btn tap" id="auditor-back" aria-label="Back">‹</button>
+        <div class="nav-title">Auditor</div>
+      </header>
+      <div class="page-scroll" id="auditor-body"></div>
+    </section>
+
+    <!-- SEARCH -->
+    <div id="search-sheet" class="sheet hidden">
+      <div class="sheet-inner">
+        <input id="search-input" class="search-input" type="search" placeholder="Name, symbol or mint" autocomplete="off" />
+        <div id="search-results"></div>
+        <button class="btn secondary tap" id="search-close">Close</button>
+      </div>
+    </div>
+
+    <nav class="tabbar" id="tabbar">
+      <button class="tab tap active" data-tab="home">Home</button>
+      <button class="tab tap" data-tab="agents">Agents</button>
+      <button class="tab tap" data-tab="activity">Activity</button>
+      <button class="tab tap" data-tab="account">Account</button>
+    </nav>
+  </div>
+  <script src="chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
