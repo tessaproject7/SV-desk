@@ -737,10 +737,10 @@
       state.mode = "planb";
       await refreshAll();
     } else {
-      state.mode = "none";
-      state.loading = false;
-      state.offline = true;
-      renderBootstrapEmpty();
+      // Home Screen / bare URL: show the public paper snapshot (no secrets).
+      state.mode = "planb";
+      state.proofRoot = "live/";
+      await refreshAll();
     }
 
     setInterval(async () => {
